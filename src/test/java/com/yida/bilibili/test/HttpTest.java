@@ -37,12 +37,12 @@ public class HttpTest {
 		//视频下载后保存在本地硬盘什么路径下
 		String savePath = ConstUtils.DEFAULT_SAVEPATH;
 		//需要下载的B站视频链接
-		String url = "https://www.bilibili.com/video/BV1bS4y1n7Wa";
+		String url = "https://www.bilibili.com/video/BV1cP411B7xK/?spm_id_from=333.337.search-card.all.click&vd_source=58472ae7f29a245c67dd7d34c237d063";
 
 		//下载什么分辨率的视频(默认选择的是 720P)
-		VideoResolution videoResolution = VideoResolution.R_720;
+		VideoResolution videoResolution = VideoResolution.R_360;
 		BiliVideoDownload biliVideoDownload = new BiliVideoDownload(url, videoResolution, 1, savePath);
-		biliVideoDownload.download();
-
+		biliVideoDownload.singleDownload();
+		//读取下/Users/yida/Downloads/bili_videos目录下的文件
 	}
 }

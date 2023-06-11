@@ -380,10 +380,8 @@ public class BiliVideoDownload {
 		commend.add(videoFile.getAbsolutePath());
 		commend.add("-i");
 		commend.add(audioFile.getAbsolutePath());
-		commend.add("-vcodec");
-		commend.add("copy");
-		commend.add("-acodec");
-		commend.add("copy");
+		//commend.add("-c");
+		//commend.add("copy");
 		commend.add(outFile);
 
 		ProcessBuilder builder = new ProcessBuilder();
